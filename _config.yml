@@ -38,14 +38,14 @@ plugins:
 
 # Navigation
 nav:
-  - title: Deployment
-    url: deployment.html
+  - title: About
+    url: about.html
+  - title: Research
     subnav:
-      - title: Heroku
-        url: heroku.html
-        subnav:
-          - title: Jekyll on Heroku
-            url: jekyll-on-heroku.html
+      - title: One-shot learning
+        url: one-shot.html
+      - title: God
+        url: god.html
   - title: Help
     url: help.html
 
