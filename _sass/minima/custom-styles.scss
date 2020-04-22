@@ -1,0 +1,7 @@
+$brand-color:           #828282 !default;
+$brand-color-light:     lighten($brand-color, 40%) !default;
+$brand-color-dark:      darken($brand-color, 25%) !default;
+
+footer {
+  border-top: 1px solid $brand-color-light;
+}
