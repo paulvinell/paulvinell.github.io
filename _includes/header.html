@@ -8,22 +8,22 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        {% for item in site.nav %}
-          {% if item.subnav %}
+        {%- for item in site.nav -%}
+          {%- if item.subnav -%}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ item.title }}
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                {% for list_item in item.subnav %}
-                  <a class="dropdown-item" href="{{ list_item.url }}">{{ list_item.title }}</a>
-                {% endfor %}
+                {%- for list_item in item.subnav -%}
+                  <a class="dropdown-item{% if item.url == page.url %} active{% endif %}" href="{{ list_item.url | relative_url }}">{{ list_item.title }}</a>
+                {%- endfor -%}
               </div>
             </li>
-          {% else %}
-            <li class="nav-item"><a class="nav-link" href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+          {%- else -%}
+            <li class="nav-item{% if item.url == page.url %} active{% endif %}"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
       </ul>
     </div>
   </nav>
