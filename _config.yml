@@ -33,6 +33,7 @@ github_username:  paulvinell
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Navigation
 nav:
