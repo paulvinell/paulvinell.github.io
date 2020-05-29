@@ -42,11 +42,14 @@ nav:
   - title: Research
     subnav:
       - title: One-shot learning
-        url: one-shot.html
+        url: /research/one_shot.html
       - title: God
         url: god.html
   - title: Help
     url: help.html
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

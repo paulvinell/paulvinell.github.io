@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: GOd
-url: /god.html
+title: Help
+permalink: help.html
 ---
-lol
+If you can read this then your screen orientation is correct.
