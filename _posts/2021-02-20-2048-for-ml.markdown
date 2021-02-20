@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "2048 for machine learning made easy"
+date:   2021-02-20 22:07:00 +0100
+categories: project
+---
+I have previously done some messy experimentation on the fantastic game 2048 using genetic algorithms without much success. I have heard that 2048 is not the easiest game to beat make an AI for. However, in my experience, it does not help that it is usually a drag to either write your own version of 2048 or mess around creating hooks and making changes in other implementations to allow the game to be automated.
+
+I was recently inspired to go back and try to apply different machine learning techniques to 2048 again. However, since I want to do multiple projects I do not want to spend my time making too many modifications on the spot, since they tend to be unnecessarily hard to implement or have unintended consequences. This motivated my decision to do a large rewrite/restructuring of my favorite 2048 implementation in Python ([2048-python][other_version] by [Yanghun Tay][yangshun]).
+
+Enter:
+
+## 2048-python-custom-player
+
+This version (found [here][my_version]) is great if you are looking to create automated agents playing 2048, or if you for other reasons find yourself wanting a custom way to apply inputs to the game. This is a specialty implementation, so it is not meant to be a game-wise better version than its predecessor. Instead, it boasts these benefits:
+
+* Modular and easy to implement player class.
+* Enable/disable rendering for each game.
+* No win scenario, you have either lost or not yet lost.
+* API calls for determining which directions are available.
+* Log state and action history.
+* Records score, number of moves, and highest tile.
+
+Using this implementation you won't get stuck with an algorithm that tries to pick directions that do not change the game state. You can do both value and policy learning. Without any modifications you already have a good basis for creating a solid fitness function. And because you can toggle rendering and use custom (algorithmically determined) sleep times you can easily both train and visualize your 2048 solver by making it solve at an appropriate speed.
+
+Below you can see the random player playing with a sleep time that gradually increases as the magnitude of the tiles increase (we don't want to miss the more interesting parts).
+
+![2048 using the random player][2048_random]
+
+## Project code
+The code for this project can be found [here][my_version].
+
+[yangshun]: http://github.com/yangshun
+[other_version]: https://github.com/yangshun/2048-python
+[my_version]: https://github.com/paulvinell/2048-python-custom-player
+[2048_random]: /assets/img/2048_for_ml/2048_random.gif
