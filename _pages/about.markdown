@@ -7,10 +7,20 @@ Hi. My name is Paul Vinell and this is my blog. However, blogs typically imply s
 
 ### Education
 * 2017-2020. Degree Programme in Computer Science and Engineering (BSc). KTH.
-* 2020-. Master's Programme in Machine Learning (MSc). KTH.
+* 2020-*present*. Master's Programme in Machine Learning (MSc). KTH.
 
 ### Work
-* 2018-. Software developer. T2 Data AB.
+* 2018-*present*. Software developer. T2 Data AB.
+  * Full stack and microservice development.
+
+### (Favorite) Programming languages
+I'm flexible and used to taking on new languages. I have worked to some degree with most common languages, but I prefer:
+* Ruby
+  * The best language out there. Rapid development, satisfying syntax, and is even fairly quick nowadays.
+* Python
+  * This one is kind of a must for data analysis and machine learning.
+* Java
+  * It's just pleasing to the eye and is fast too. If I need a language with some structure to it I will use Java.
 
 ### My history with computers
 * Began using the computer (Windows 98) around age 4-5.
