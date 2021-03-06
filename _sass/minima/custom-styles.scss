@@ -5,3 +5,32 @@ $brand-color-dark:      darken($brand-color, 25%) !default;
 footer {
   border-top: 1px solid $brand-color-light;
 }
+
+.post-content {
+
+  h2, h3, h4 {
+    margin-bottom: $spacing-unit / 4;
+  }
+
+  h2 {
+    margin-top: $spacing-unit * (8 / 6);
+    @include relative-font-size(2);
+  }
+
+  h3 {
+    margin-top: $spacing-unit * (4 / 6);
+    @include relative-font-size(1.45);
+  }
+
+  h4 {
+    margin-top: $spacing-unit * (4 / 6);
+    @include relative-font-size(1.125);
+  }
+
+  h5 {
+    @include relative-font-size(1.0625);
+  }
+  h6 {
+    @include relative-font-size(1.03125);
+  }
+}
