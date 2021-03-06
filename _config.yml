@@ -44,9 +44,9 @@ nav:
       - title: One-shot learning
         url: /research/one_shot.html
       - title: God
-        url: god.html
+        url: /god.html
   - title: Help
-    url: help.html
+    url: /help.html
 
 include:
   - _pages

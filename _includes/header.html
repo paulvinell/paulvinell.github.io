@@ -1,30 +1,32 @@
 <header class="site-header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="container-fluid">
+      <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        {%- for item in site.nav -%}
-          {%- if item.subnav -%}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ item.title }}
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                {%- for list_item in item.subnav -%}
-                  <a class="dropdown-item{% if item.url == page.url %} active{% endif %}" href="{{ list_item.url | relative_url }}">{{ list_item.title }}</a>
-                {%- endfor -%}
-              </div>
-            </li>
-          {%- else -%}
-            <li class="nav-item{% if item.url == page.url %} active{% endif %}"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          {%- for item in site.nav -%}
+            {%- if item.subnav -%}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ item.title }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {%- for list_item in item.subnav -%}
+                    <li><a class="dropdown-item{% if list_item.url == page.url %} active{% endif %}" href="{{ list_item.url | relative_url }}">{{ list_item.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              </li>
+            {%- else -%}
+              <li class="nav-item"><a class="nav-link{% if item.url == page.url %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
