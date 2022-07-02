@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "One-shot learning and catching a glimpse of the Leviathan"
+title:  "One-shot learning and catching a glimpse of something bigger"
 date:   2020-05-28 22:08:00 +0200
 categories: research
 ---
@@ -18,7 +18,7 @@ This is just so weirdly similar to my idea. Now, I had never heard of knowledge 
 
 ![Model overview][model_img]
 
-Why did I catch a glimpse of the Leviathan? I got closer than I ever imagined to something huge.
+Why did I catch a glimpse of something bigger? I got closer than I ever imagined to something huge.
 
 [one_shot_page]: {% link _pages/one_shot.markdown %}
 [the_batch]: https://www.deeplearning.ai/thebatch/
