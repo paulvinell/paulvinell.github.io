@@ -33,3 +33,11 @@
     </div>
   </div>
 </footer>
+
+{%- for item in site.special.react %}
+  {%- if item.url == page.url %}
+    {%- include react.html -%}
+    {%- include react-component.html -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}

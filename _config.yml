@@ -49,6 +49,15 @@ nav:
   - title: Hall scheduler
     url: /hall_scheduler.html
 
+# Special functionality
+special:
+  react:
+    - url: /hall_scheduler.html
+      script: /assets/js/hall_scheduler.js
+  pyscript:
+    - url: /hall_scheduler.html
+      script: /assets/py/hall_scheduler.py
+
 include:
   - _pages
 
