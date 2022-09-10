@@ -46,6 +46,8 @@ nav:
         url: /research/one_shot.html
       - title: Error detection in blood work
         url: /research/blood_tests.html
+  - title: Hall scheduler
+    url: /hall_scheduler.html
 
 include:
   - _pages
