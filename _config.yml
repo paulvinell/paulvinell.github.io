@@ -53,10 +53,13 @@ nav:
 special:
   react:
     - url: /hall_scheduler.html
-      script: /assets/js/hall_scheduler.js
+      script: /assets/hall_scheduler/js/main.jsx
   pyscript:
     - url: /hall_scheduler.html
-      script: /assets/py/hall_scheduler.py
+      script: /assets/hall_scheduler/python/main.py
+  css:
+    - url: /hall_scheduler.html
+      script: /assets/hall_scheduler/css/main.css
 
 include:
   - _pages

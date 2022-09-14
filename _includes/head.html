@@ -5,7 +5,15 @@
   <meta name="google-site-verification" content="P30j8a_fKefpcB9r2pSaNC7x6uT8fgxJPHxeq_UCowc">
   {%- seo -%}
   {%- include custom-head.html -%}
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- for item in site.special.css %}
+    {%- if item.url == page.url %}
+      <link rel="stylesheet" href="{{ item.url | relative_url }}">
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
