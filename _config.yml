@@ -36,10 +36,16 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+collections:
+  notes:
+    output: false
+
 # Navigation
 nav:
   - title: About
     url: /about/
+  - title: Notes
+    url: /notes/
   - title: Research
     subnav:
       - title: One-shot learning

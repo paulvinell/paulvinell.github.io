@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="notes">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- assign notes = site.notes | sort: "date" | reverse -%}
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  <ul class="note-list">
+    {%- for note in notes -%}
+    {%- assign note_id = note.path | split: "/" | last | split: "." | first -%}
+    <li class="note" id="{{ note_id }}">
+      <div class="note-header">
+        <a class="note-date" href="#{{ note_id }}">{{ note.date | date: date_format }}</a>
+      </div>
+      <div class="note-content">
+        {{ note.content }}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

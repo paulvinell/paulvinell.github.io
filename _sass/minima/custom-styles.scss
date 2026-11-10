@@ -34,3 +34,43 @@ footer {
     @include relative-font-size(1.03125);
   }
 }
+
+.notes {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.note-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.note {
+  padding: $spacing-unit / 2 0;
+  border-bottom: 1px solid $brand-color-light;
+
+  &:target {
+    background-color: lighten($brand-color, 45%);
+  }
+}
+
+.note-header {
+  margin-bottom: $spacing-unit / 6;
+}
+
+.note-date {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.note-content {
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-top: $spacing-unit / 3;
+    border-radius: 12px;
+  }
+}
