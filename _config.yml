@@ -69,3 +69,5 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+timezone: Europe/Stockholm
