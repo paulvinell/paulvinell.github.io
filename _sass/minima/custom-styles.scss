@@ -73,4 +73,17 @@ footer {
     margin-top: $spacing-unit / 3;
     border-radius: 12px;
   }
+
+  .table-caption {
+    margin-top: -($spacing-unit * 0.75);
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+
+  table.row-labels {
+    th:first-child,
+    td:first-child {
+      border-right-color: darken($grey-color-light, 12%);
+    }
+  }
 }
