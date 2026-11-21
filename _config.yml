@@ -46,6 +46,8 @@ nav:
     url: /about/
   - title: Notes
     url: /notes/
+  - title: Fribord EEG
+    url: /fribord-eeg/
 
 include:
   - _pages
