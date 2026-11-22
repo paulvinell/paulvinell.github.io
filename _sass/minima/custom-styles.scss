@@ -87,3 +87,12 @@ footer {
     }
   }
 }
+
+.post-content {
+  .image-caption {
+    margin-top: -($spacing-unit / 2);
+    text-align: center;
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+}
